@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Green Corner</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Personal webpage with a green, tree-themed design." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="site-title">Your Green Corner</h1>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h2>Rooted in nature, growing ideas</h2>
+          <p>Welcome to my personal space — a calm green place for projects, stories, and a few leaves.</p>
+          <p><a class="cta" href="#projects">See my work</a></p>
+        </div>
+
+        <!-- SVG scene: trees, hills, sun -->
+        <div class="hero-scene" aria-hidden="true">
+          <svg viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid meet" class="scene-svg">
+            <!-- background sky -->
+            <defs>
+              <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0%" stop-color="#dfffe6" />
+                <stop offset="100%" stop-color="#b9f0c9" />
+              </linearGradient>
+              <linearGradient id="hill" x1="0" x2="1" y1="0" y2="0">
+                <stop offset="0%" stop-color="#7fc78b" />
+                <stop offset="100%" stop-color="#3c8a4d" />
+              </linearGradient>
+              <linearGradient id="sun" x1="0" x2="1">
+                <stop offset="0%" stop-color="#fff2c1" />
+                <stop offset="100%" stop-color="#ffdf80" />
+              </linearGradient>
+            </defs>
+
+            <rect width="1200" height="600" fill="url(#sky)"></rect>
+
+            <!-- sun -->
+            <circle cx="980" cy="90" r="60" fill="url(#sun)" opacity="0.95" />
+
+            <!-- rolling hills -->
+            <path d="M0,420 C200,360 400,480 600,420 C800,360 1000,460 1200,420 L1200,600 L0,600 Z" fill="url(#hill)"></path>
+
+            <!-- Tree group 1 -->
+            <g class="tree tree-1" transform="translate(180,310)">
+              <!-- trunk -->
+              <rect x="-12" y="40" width="24" height="110" rx="8" fill="#6a4727" />
+              <!-- foliage -->
+              <g class="foliage" transform="translate(0,0)">
+                <ellipse cx="0" cy="0" rx="80" ry="60" fill="#2e8b57" />
+                <ellipse cx="-40" cy="-20" rx="50" ry="40" fill="#32a070" />
+                <ellipse cx="40" cy="-20" rx="50" ry="40" fill="#2ba86b" />
+              </g>
+            </g>
+
+            <!-- Tree group 2 -->
+            <g class="tree tree-2" transform="translate(420,300)">
+              <rect x="-10" y="50" width="20" height="120" rx="7" fill="#6a4727" />
+              <g class="foliage" transform="translate(0,0)">
+                <circle cx="0" cy="-10" r="70" fill="#2e8b57" />
+                <circle cx="-45" cy="-30" r="45" fill="#33a169" />
+                <circle cx="45" cy="-30" r="45" fill="#2ba86b" />
+              </g>
+            </g>
+
+            <!-- Tree group 3 (foreground) -->
+            <g class="tree tree-3" transform="translate(780,320)">
+              <rect x="-16" y="35" width="32" height="125" rx="9" fill="#5a3b20" />
+              <g class="foliage" transform="translate(0,0)">
+                <ellipse cx="0" cy="-5" rx="95" ry="70" fill="#2f7f4f" />
+                <ellipse cx="-55" cy="-25" rx="55" ry="45" fill="#37a46b" />
+                <ellipse cx="55" cy="-25" rx="55" ry="45" fill="#2aa868" />
+              </g>
+            </g>
+
+            <!-- drifting leaves (small circles) -->
+            <g class="leaves">
+              <circle class="leaf leaf-1" cx="250" cy="150" r="6" fill="#7ee3a9" />
+              <circle class="leaf leaf-2" cx="600" cy="120" r="5" fill="#a6f3cb" />
+              <circle class="leaf leaf-3" cx="920" cy="200" r="6" fill="#86e7b6" />
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h3>About me</h3>
+      <p>I'm a person who loves nature and thoughtful design. This page shows a simple aesthetic combining greens, soft shapes, and a calm layout to highlight work and contact info.</p>
+    </section>
+
+    <section id="projects" class="container projects">
+      <h3>Projects</h3>
+      <div class="cards">
+        <article class="card">
+          <h4>Green Blog</h4>
+          <p>A series of posts about urban gardening and eco-friendly tools.</p>
+        </article>
+        <article class="card">
+          <h4>Plant Tracker</h4>
+          <p>A small app to track watering and care for houseplants.</p>
+        </article>
+        <article class="card">
+          <h4>Design Experiments</h4>
+          <p>Visual experiments using SVG and CSS to create organic shapes.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h3>Contact</h3>
+      <p>If you'd like to get in touch, email me at <a href="mailto:you@example.com">you@example.com</a> or follow me on social media.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>Made with 🌿 — Your Green Corner</small>
+    </div>
+  </footer>
+
+</body>
+</html>
